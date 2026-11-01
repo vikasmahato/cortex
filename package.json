@@ -1,0 +1,29 @@
+{
+  "name": "cortex",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "daemon": "npm run dev -w @cortex/daemon",
+    "backfill": "npm run backfill -w @cortex/daemon",
+    "install-hooks": "node packages/hook/bin/cortex.mjs install",
+    "uninstall-hooks": "node packages/hook/bin/cortex.mjs uninstall",
+    "typecheck": "tsc -b --noEmit false --pretty false || tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "summarize": "npm run summarize -w @cortex/daemon --"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.8"
+  }
+}

@@ -1,0 +1,2 @@
+{ "name": "@cortex/hook", "version": "0.1.0", "private": true, "type": "module",
+  "bin": { "cortex": "bin/cortex.mjs", "cortex-hook": "bin/cortex-hook.mjs" } }

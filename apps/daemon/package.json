@@ -1,0 +1,19 @@
+{
+  "name": "@cortex/daemon",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "backfill": "tsx src/backfill.ts",
+    "summarize": "tsx src/summarize-cli.ts"
+  },
+  "dependencies": {
+    "@cortex/core": "*",
+    "@cortex/db": "*",
+    "@hono/node-server": "^1.13.7",
+    "hono": "^4.6.14",
+    "ws": "^8.18.0"
+  }
+}

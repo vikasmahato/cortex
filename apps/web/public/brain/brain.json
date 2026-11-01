@@ -1,0 +1,38 @@
+{
+ "scale": 0.017816091954022988,
+ "regions": [
+  "prefrontal",
+  "occipital",
+  "motor",
+  "parietal",
+  "temporal",
+  "hippocampus",
+  "cerebellum",
+  "amygdala"
+ ],
+ "neuronPos": {
+  "offset": 0,
+  "count": 17226,
+  "bytes": 206712
+ },
+ "neuronReg": {
+  "offset": 206712,
+  "count": 17226,
+  "bytes": 17228
+ },
+ "shellPos": {
+  "offset": 223940,
+  "count": 95524,
+  "bytes": 1146288
+ },
+ "shellReg": {
+  "offset": 1370228,
+  "count": 95524,
+  "bytes": 95524
+ },
+ "shellIdx": {
+  "offset": 1465752,
+  "count": 571980,
+  "bytes": 2287920
+ }
+}
